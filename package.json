@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "predev": "npm install",
     "dev": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",

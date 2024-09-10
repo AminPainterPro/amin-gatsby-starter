@@ -1,5 +1,7 @@
+import tailwindCssAnimate from 'tailwindcss-animate';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: ['class'],
   content: [
     './src/pages/**/*.{ts,tsx}',
@@ -31,12 +33,19 @@ module.exports = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
+          DEFAULT: '#DC2227',
           foreground: 'hsl(var(--primary-foreground))',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
+          light: '#555555',
+          DEFAULT: '#0e0e0ec9',
+          dark: '#181818',
+          darker: '#0e0e0e',
           foreground: 'hsl(var(--secondary-foreground))',
+        },
+        writing: {
+          light: '#D0D0D0',
+          DEFAULT: '#f5f5f5',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -80,5 +89,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [tailwindCssAnimate],
 };
